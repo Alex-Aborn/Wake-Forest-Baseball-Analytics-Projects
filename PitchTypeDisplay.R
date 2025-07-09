@@ -168,9 +168,9 @@ PitchTypeDisplay <- function(newdf, refdf){
             }
           }
           #Get rid of holder
-          #if("holder" %in% names(data)){
-          #data <- data %>% select(-holder)
-          #}
+          if("holder" %in% names(data)){
+          data <- data %>% select(-holder)
+          }
         }
       }
     }
